@@ -5,6 +5,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+set relativenumber
+
 " splitting windows
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
