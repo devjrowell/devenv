@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/jrowell/.mono/registry'
+let g:netrw_dirhist_2='/Users/jrowell/Sites/Eclipse/shopco/wp-content/plugins/woocommerce/classes/shipping/flat-rate'
+let g:netrw_dirhist_3='/Users/jrowell/Projects/bioformats/components/xsd-fu/python'
+let g:netrw_dirhist_4='/Users/jrowell/.ssh'
+let g:netrw_dirhist_5='/Users/jrowell'
+let g:netrw_dirhist_6='/Users/jrowell/Projects/dotnetcore/PtsGradingOcr/PtsGradingOcr.Web/Properties'

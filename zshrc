@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/jrowell/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,6 +85,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux='TERM=screen-256color-bce tmux -u'
+alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+
+#export VIMRUNTIME=~/.vim:/Applications/MacVim.app/Contents/Resources/vim/runtime
+#export VIMRUNTIME=/Applications/MacVim.app/Contents/Resources/vim/runtime
 
 [ -s "/home/jrowell/.dnx/dnvm/dnvm.sh" ] && . "/home/jrowell/.dnx/dnvm/dnvm.sh" # Load dnvm
+[ -s "/usr/local/lib/dnx/bin/dnvm.sh" ] && source "/usr/local/lib/dnx/bin/dnvm.sh" # Load dnvm
+
+# dev stuff
+alias psql=/opt/local/bin/psql
+export MONO_MANAGED_WATCHER=false
+# end dev stuff
 

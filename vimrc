@@ -31,6 +31,6 @@ let g:syntastic_check_on_wq = 0
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-source ~/.vimrc.plugins
-source ~/.vimrc.colors
-source ~/.vimrc.omnisharp
+source ~/.devenv/vimrc.plugins
+source ~/.devenv/vimrc.colors
+source ~/.devenv/vimrc.omnisharp
