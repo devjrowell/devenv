@@ -1,0 +1,5 @@
+
+" HACK
+" Make sure you remove "exe 'pyfile ' . python_module" in autoload/minimap.vim
+pyfile /Users/jrowell/.vim/bundle/vim-minimap/autoload/minimap.py
+
