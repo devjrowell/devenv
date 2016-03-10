@@ -97,5 +97,6 @@ alias vim='/Applications/MacVim.app/Contents/MacOS/Vim -c Minimap'
 # dev stuff
 alias psql=/opt/local/bin/psql
 export MONO_MANAGED_WATCHER=false
+. ~/.devenv/zshrc.thorovetx
 # end dev stuff
 

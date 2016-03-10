@@ -18,6 +18,12 @@ git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/tpope/vim-dispatch.git
 #exit
 
+# Omnisharp
+cd ~/.devenv/vim/bundle/omnisharp-vim
+git submodule update --init --recursive
+cd server
+xbuild
+
 # YouCompleteMe submodules
 cd ~/.devenv/vim/bundle/YouCompleteMe
 git submodule update --init --recursive
