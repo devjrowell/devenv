@@ -1,0 +1,7 @@
+
+alias txr="cd ~/Projects/dotnetcore/ThorovetX && dnu restore --quiet"
+alias txd="cd ~/Projects/dotnetcore/ThorovetX/ThorovetX.Data && dnu restore --quiet"
+alias txb="txr && cd ~/Projects/dotnetcore/ThorovetX/ThorovetX.Web && dnu build --quiet"
+alias txw="cd ~/Projects/dotnetcore/ThorovetX/ThorovetX.Web && dnx web"
+alias txpsql="psql -h 192.168.137.127 -U thorovetx -W thorovetx"
+
