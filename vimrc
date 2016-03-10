@@ -34,3 +34,4 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 source ~/.devenv/vimrc.plugins
 source ~/.devenv/vimrc.colors
 source ~/.devenv/vimrc.omnisharp
+source ~/.devenv/vimrc.minimap

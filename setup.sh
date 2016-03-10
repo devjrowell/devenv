@@ -25,6 +25,11 @@ sudo npm install tern -g
 sudo npm install typescript -g
 ./install.py --clang-completer --omnisharp-completer --tern-completer
 
+# tmux plugins
+cd ~/.devenv/tmux/plugins
+# tmux-cpu-mem-load ?
+git clone https://github.com/erikw/tmux-powerline.git
+
 cd ~/
 
 # zsh

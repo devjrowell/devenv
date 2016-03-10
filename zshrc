@@ -85,8 +85,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tmux='TERM=screen-256color-bce tmux -u'
-alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
-alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi='/Applications/MacVim.app/Contents/MacOS/Vim -c Minimap'
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim -c Minimap'
 
 #export VIMRUNTIME=~/.vim:/Applications/MacVim.app/Contents/Resources/vim/runtime
 #export VIMRUNTIME=/Applications/MacVim.app/Contents/Resources/vim/runtime
