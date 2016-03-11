@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 # oh-my-zsh
-cd ~/.devenv && git clone https://github.com/robbyrussell/oh-my-zsh.git
-cd ~/.devenv/oh-my-zsh && git submodule update --init --recursive
+#cd ~/.devenv && git clone https://github.com/robbyrussell/oh-my-zsh.git
+#cd ~/.devenv/oh-my-zsh && git submodule update --init --recursive
 
 # vim plugins
 #cd ~/.devenv/vim/bundle
