@@ -40,6 +40,9 @@ cd ~/.devenv/tmux/plugins
 git clone https://github.com/thewtex/tmux-mem-cpu-load.git
 git clone https://github.com/erikw/tmux-powerline.git
 
+# tmux-mem-cpu-load
+cd ~/.devenv/tmux/plugins/tmux-mem-cpu-load && cmake . && make
+
 cd ~/
 
 # zsh
