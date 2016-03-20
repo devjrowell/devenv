@@ -26,11 +26,11 @@ cd server
 xbuild
 
 # YouCompleteMe submodules
-cd ~/.devenv/vim/bundle/YouCompleteMe
-git submodule update --init --recursive
-sudo npm install tern -g
-sudo npm install typescript -g
-./install.py --clang-completer --omnisharp-completer --tern-completer
+#cd ~/.devenv/vim/bundle/YouCompleteMe
+#git submodule update --init --recursive
+#sudo npm install tern -g
+#sudo npm install typescript -g
+#./install.py --clang-completer --omnisharp-completer --tern-completer
 
 # install all of the vim plugins
 vim -c PluginInstall
