@@ -10,6 +10,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kshenoy/vim-signature'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'ervandew/supertab'
@@ -20,6 +22,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'OrangeT/vim-csharp'
 Plugin 'tpope/vim-dispatch'
 Plugin 'severin-lemaignan/vim-minimap'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

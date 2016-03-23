@@ -35,6 +35,11 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" buffer switch
+"map <C-Tab> :bnext<CR>
+"map <C-S-Tab> :bprevious<CR>
+map <Leader>g :BuffergatorToggle<CR>
+
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
