@@ -1,6 +1,2 @@
 tmux/plugins/tmux-mem-cpu-load
-vim/bundle/omnisharp-vim
-vim/bundle/neocomplete.vim
-vim/bundle/nerdcommenter
-vim/bundle/vim-signature
-vim/bundle/vim-buffergator
+vim/bundle/*
