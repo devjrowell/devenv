@@ -46,6 +46,7 @@ cd ~/.devenv/tmux/plugins/tmux-mem-cpu-load && cmake . && make
 cd ~/
 
 # zsh
+ln -s .devenv/zshenv .zshenv
 ln -s .devenv/zshrc .zshrc
 ln -s .devenv/oh-my-zsh .oh-my-zsh
 

@@ -59,6 +59,7 @@ plugins=(git)
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zshenv
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -84,21 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tmux='TERM=screen-256color-bce tmux -u'
-#alias vi='/Applications/MacVim.app/Contents/MacOS/Vim -c Minimap'
-#alias vim='/Applications/MacVim.app/Contents/MacOS/Vim -c Minimap'
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-
-#export VIMRUNTIME=~/.vim:/Applications/MacVim.app/Contents/Resources/vim/runtime
-#export VIMRUNTIME=/Applications/MacVim.app/Contents/Resources/vim/runtime
-
-[ -s "/home/jrowell/.dnx/dnvm/dnvm.sh" ] && . "/home/jrowell/.dnx/dnvm/dnvm.sh" # Load dnvm
-[ -s "/usr/local/lib/dnx/bin/dnvm.sh" ] && source "/usr/local/lib/dnx/bin/dnvm.sh" # Load dnvm
-
-# dev stuff
-alias psql=/opt/local/bin/psql
-export MONO_MANAGED_WATCHER=false
-. ~/.devenv/zshrc.thorovetx
-# end dev stuff
-
+#

@@ -4,11 +4,14 @@ filetype off                  " required
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+set shell=zsh
 
 "set relativenumber
 
 " enable syntax highlighting 
 syntax enable 
+"set foldmethod=syntax
+"set nowritebackup
 
 " show line numbers 
 set number 
@@ -55,6 +58,15 @@ let g:syntastic_check_on_wq = 0
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+if executable('ag') 
+    " Use ag over grep 
+    set grepprg=ag\ --nogroup\ --nocolor 
+    " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore 
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""' 
+    " ag is fast enough that CtrlP doesn't need to cache 
+    let g:ctrlp_use_caching = 0 
+endif
 
 source ~/.devenv/vimrc.plugins
 source ~/.devenv/vimrc.colors
