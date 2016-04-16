@@ -1,4 +1,5 @@
 
+set foldmethod=syntax
 let g:OmniSharp_selector_ui = 'ctrlp'  " Use ctrlp.vim
 
 "let g:OmniSharp_server_type = 'v1'

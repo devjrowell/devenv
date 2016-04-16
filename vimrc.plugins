@@ -6,23 +6,29 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'Shougo/neocomplete.vim'
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'kshenoy/vim-signature'
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'OrangeT/vim-csharp'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'kshenoy/vim-signature'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'OmniSharp/omnisharp-vim'
-Plugin 'ervandew/supertab'
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-dispatch'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'OrangeT/vim-csharp'
-Plugin 'tpope/vim-dispatch'
-Plugin 'severin-lemaignan/vim-minimap'
-Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'kopischke/vim-stay'
+Plugin 'Konfekt/FastFold'
+Plugin 'Konfekt/FoldText'
+Plugin 'jimsei/winresizer'
+Plugin 'tpope/vim-fugitive'
+Plugin 'yssl/QFEnter'
+Plugin 'tpope/vim-surround'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

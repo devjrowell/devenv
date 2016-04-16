@@ -1,17 +1,20 @@
 set nocompatible              " be iMproved, required
+set hidden
 filetype off                  " required
+set showtabline=0
 
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set shell=zsh
 
-"set relativenumber
+set relativenumber
 
 " enable syntax highlighting 
 syntax enable 
 "set foldmethod=syntax
 "set nowritebackup
+set viewoptions=cursor,folds,slash,unix
 
 " show line numbers 
 set number 
@@ -41,7 +44,7 @@ set splitright
 " buffer switch
 "map <C-Tab> :bnext<CR>
 "map <C-S-Tab> :bprevious<CR>
-map <Leader>g :BuffergatorToggle<CR>
+"map <Leader>g :BuffergatorToggle<CR>
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -58,18 +61,31 @@ let g:syntastic_check_on_wq = 0
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+map <Leader>b :CtrlPBuffer<CR>
 
 if executable('ag') 
     " Use ag over grep 
-    set grepprg=ag\ --nogroup\ --nocolor 
+    "set grepprg=ag\ --nogroup\ --nocolor 
+    set grepprg=ag\ --vimgrep\ --ignore=*.min.*\ --ignore=kendo.*\ --ignore=bower_components\ --ignore=wwwroot/lib\ $* 
+    set grepformat=%f:%l:%c:%m
     " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore 
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""' 
     " ag is fast enough that CtrlP doesn't need to cache 
     let g:ctrlp_use_caching = 0 
 endif
 
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+" auto open quickfix window for grep
+autocmd QuickFixCmdPost *grep* cwindow
+
 source ~/.devenv/vimrc.plugins
 source ~/.devenv/vimrc.colors
 source ~/.devenv/vimrc.omnisharp
 source ~/.devenv/vimrc.neocomplete
-source ~/.devenv/vimrc.minimap
+
+" auto reload vimrc
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
