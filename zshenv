@@ -1,7 +1,7 @@
 
 alias tmux='TERM=screen-256color-bce tmux -u attach || tmux -u new'
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+[ -s "/Applications/MacVim.app/Contents/MacOS/Vim" ] && alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
+[ -s "/Applications/MacVim.app/Contents/MacOS/Vim" ] && alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 [ -s "/home/jrowell/.dnx/dnvm/dnvm.sh" ] && . "/home/jrowell/.dnx/dnvm/dnvm.sh" # Load dnvm
 [ -s "/usr/local/lib/dnx/bin/dnvm.sh" ] && source "/usr/local/lib/dnx/bin/dnvm.sh" # Load dnvm

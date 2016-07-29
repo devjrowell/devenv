@@ -6,7 +6,7 @@ cd ~/.devenv/oh-my-zsh && git submodule update --init --recursive
 
 # vim plugins
 #cd ~/.devenv/vim/bundle
-#git clone https://github.com/VundleVim/Vundle.vim.git
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.deven/vim/bundle/Vundle.vim
 #git clone https://github.com/Valloric/YouCompleteMe.git
 #git clone https://github.com/kien/ctrlp.vim.git
 #git clone https://github.com/scrooloose/nerdtree.git
@@ -20,10 +20,10 @@ cd ~/.devenv/oh-my-zsh && git submodule update --init --recursive
 #exit
 
 # Omnisharp
-cd ~/.devenv/vim/bundle/omnisharp-vim
-git submodule update --init --recursive
-cd server
-xbuild
+#cd ~/.devenv/vim/bundle/omnisharp-vim
+#git submodule update --init --recursive
+#cd server
+#xbuild
 
 # YouCompleteMe submodules
 #cd ~/.devenv/vim/bundle/YouCompleteMe
@@ -32,9 +32,6 @@ xbuild
 #sudo npm install typescript -g
 #./install.py --clang-completer --omnisharp-completer --tern-completer
 
-# install all of the vim plugins
-vim -c PluginInstall
-
 # tmux plugins
 cd ~/.devenv/tmux/plugins
 git clone https://github.com/thewtex/tmux-mem-cpu-load.git
@@ -42,6 +39,10 @@ git clone https://github.com/erikw/tmux-powerline.git
 
 # tmux-mem-cpu-load
 cd ~/.devenv/tmux/plugins/tmux-mem-cpu-load && cmake . && make
+
+# powerline fonts
+#cd ~/.devenv/
+#git clone https://github.com/powerline/fonts.git
 
 cd ~/
 
@@ -56,4 +57,8 @@ ln -s .devenv/tmux.conf .tmux.conf
 # vim
 ln -s .devenv/vim .vim
 ln -s .devenv/vimrc .vimrc
+
+# install all of the vim plugins
+vim +PluginInstall +qall
+vim +VimProcInstall
 
