@@ -6,7 +6,7 @@ cd ~/.devenv/oh-my-zsh && git submodule update --init --recursive
 
 # vim plugins
 #cd ~/.devenv/vim/bundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.deven/vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.devenv/vim/bundle/Vundle.vim
 #git clone https://github.com/Valloric/YouCompleteMe.git
 #git clone https://github.com/kien/ctrlp.vim.git
 #git clone https://github.com/scrooloose/nerdtree.git
