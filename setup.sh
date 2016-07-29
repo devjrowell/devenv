@@ -39,6 +39,7 @@ git clone https://github.com/erikw/tmux-powerline.git
 
 # tmux-mem-cpu-load
 cd ~/.devenv/tmux/plugins/tmux-mem-cpu-load && cmake . && make
+sudo ln -s ~/.devenv/tmux/plugins/tmux-mem-cpu-load/tmux-mem-cpu-load /usr/local/bin/tmux-mem-cpu-load
 
 # powerline fonts
 #cd ~/.devenv/
