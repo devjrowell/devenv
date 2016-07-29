@@ -3,6 +3,10 @@ set hidden
 filetype off                  " required
 set showtabline=0
 
+"set autochdir
+"autocmd BufEnter * silent! lcd %:p:h
+nnoremap ,cd :lcd %:p:h<CR>:pwd<CR>
+
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -58,10 +62,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {
+    \ "mode": "active",
+    \ "passive_filetypes": ["cshtml"] }
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <Leader>b :CtrlPBuffer<CR>
+map <Leader>g :CtrlPBuffer<CR>
 
 if executable('ag') 
     " Use ag over grep 
@@ -83,6 +91,7 @@ source ~/.devenv/vimrc.plugins
 source ~/.devenv/vimrc.colors
 source ~/.devenv/vimrc.omnisharp
 source ~/.devenv/vimrc.neocomplete
+source ~/.devenv/vimrc.php
 
 " auto reload vimrc
 augroup reload_vimrc " {

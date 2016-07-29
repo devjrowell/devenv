@@ -28,6 +28,13 @@ Plugin 'jimsei/winresizer'
 Plugin 'tpope/vim-fugitive'
 Plugin 'yssl/QFEnter'
 Plugin 'tpope/vim-surround'
+Plugin 'rking/ag.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+
+" php
+Plugin 'Shougo/vimproc'
+Plugin 'Shougo/unite.vim'
+Plugin 'm2mdas/phpcomplete-extended'
 
 
 " All of your Plugins must be added before the following line
