@@ -52,6 +52,9 @@ ln -s .devenv/zshenv .zshenv
 ln -s .devenv/zshrc .zshrc
 ln -s .devenv/oh-my-zsh .oh-my-zsh
 
+# bash
+ln -s .devenv/bashrc .bashrc
+
 # tmux
 ln -s .devenv/tmux.conf .tmux.conf
 
