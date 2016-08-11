@@ -66,3 +66,7 @@ ln -s .devenv/vimrc .vimrc
 vim +PluginInstall +qall
 vim +VimProcInstall
 
+echo ""
+echo "devenv is installed and setup!"
+echo ""
+
