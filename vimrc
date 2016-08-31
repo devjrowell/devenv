@@ -68,12 +68,15 @@ let g:syntastic_mode_map = {
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-map <Leader>b :CtrlPBuffer<CR>
+"map <Leader>b :CtrlPBuffer<CR>
 map <Leader>g :CtrlPBuffer<CR>
+let g:ctrlp_map = '<c-z>'
+nnoremap <c-o> :CtrlP<CR>:redraw!<CR>
+nnoremap <Leader>f :CtrlP<CR>:redraw!<CR>
 
 if executable('ag') 
     " Use ag over grep 
-    "set grepprg=ag\ --nogroup\ --nocolor 
+    ""set grepprg=ag\ --nogroup\ --nocolor 
     set grepprg=ag\ --vimgrep\ --ignore=*.min.*\ --ignore=kendo.*\ --ignore=bower_components\ --ignore=wwwroot/lib\ $* 
     set grepformat=%f:%l:%c:%m
     " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore 
@@ -98,3 +101,4 @@ augroup reload_vimrc " {
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
+

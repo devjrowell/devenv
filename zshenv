@@ -7,8 +7,8 @@ alias tmux='TERM=screen-256color-bce tmux -u attach || tmux -u new'
 [ -s "/usr/local/lib/dnx/bin/dnvm.sh" ] && source "/usr/local/lib/dnx/bin/dnvm.sh" # Load dnvm
 
 #alias web='python -m SimpleHTTPServer'
-alias web='twistd -n web --path . --port 8000'
-alias phpweb='php --php-ini /etc/php.ini -S 0.0.0.0:8000'
+alias web='authbind --deep twistd -n web --path . --port 80'
+alias phpweb='authbind --deep php --php-ini /etc/php.ini -S 0.0.0.0:80'
 
 # dev stuff
 export MONO_MANAGED_WATCHER=false
