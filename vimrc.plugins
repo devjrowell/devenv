@@ -30,6 +30,7 @@ Plugin 'yssl/QFEnter'
 Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'pangloss/vim-javascript'
 
 " php
 Plugin 'Shougo/vimproc'
