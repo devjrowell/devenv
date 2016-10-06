@@ -69,8 +69,6 @@ let g:syntastic_mode_map = {
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <Leader>g :CtrlPBuffer<CR>
-let g:ctrlp_map = '<c-o>'
-"nnoremap <c-o> :CtrlP<CR>:redraw!<CR>
 nnoremap <Leader>f :CtrlP<CR>:redraw!<CR>
 
 if executable('ag') 
