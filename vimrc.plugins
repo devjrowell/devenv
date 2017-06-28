@@ -1,3 +1,6 @@
+"To uninstall plugins:
+":PluginUpdate
+":PluginClean
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -33,9 +36,9 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'pangloss/vim-javascript'
 
 " php
-Plugin 'Shougo/vimproc'
-Plugin 'Shougo/unite.vim'
-Plugin 'm2mdas/phpcomplete-extended'
+"Plugin 'Shougo/vimproc'
+"Plugin 'Shougo/unite.vim'
+"Plugin 'm2mdas/phpcomplete-extended'
 
 
 " All of your Plugins must be added before the following line
