@@ -34,6 +34,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'rking/ag.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'Quramy/tsuquyomi'
 
 " php
 "Plugin 'Shougo/vimproc'

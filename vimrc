@@ -91,6 +91,7 @@ source ~/.devenv/vimrc.plugins
 source ~/.devenv/vimrc.colors
 source ~/.devenv/vimrc.omnisharp
 source ~/.devenv/vimrc.neocomplete
+source ~/.devenv/vimrc.typescript
 source ~/.devenv/vimrc.php
 
 " auto reload vimrc
