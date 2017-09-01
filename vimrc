@@ -63,13 +63,15 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {
-    \ "mode": "active",
-    \ "passive_filetypes": ["cshtml"] }
+            \ "mode": "active",
+            \ "passive_filetypes": ["cshtml"] }
 
 " ctrlp
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 map <Leader>g :CtrlPBuffer<CR>
 nnoremap <Leader>f :CtrlP<CR>:redraw!<CR>
+inoremap jj <esc>
+
 
 if executable('ag') 
     " Use ag over grep 
@@ -92,10 +94,41 @@ source ~/.devenv/vimrc.colors
 source ~/.devenv/vimrc.omnisharp
 source ~/.devenv/vimrc.neocomplete
 source ~/.devenv/vimrc.php
+source ~/.devenv/vimrc.tern
 
 " auto reload vimrc
 augroup reload_vimrc " {
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
+
+let g:jsx_ext_required = 0
+let g:syntastic_javascript_checkers = ['standard'] " eslint,standard
+"let g:syntastic_javascript_checkers = ['jsxhint']
+"let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
+"autocmd bufwritepost *.js :silent exec "!/app/node_modules/.bin/standard --fix % > /dev/null 2>&1"
+"set autoread
+
+"command! -complete=shellcmd -nargs=+ Shell call s:RunShellCommand(<q-args>)
+"function! s:RunShellCommand(cmdline)
+    "echo a:cmdline
+    "let expanded_cmdline = a:cmdline
+    "for part in split(a:cmdline, ' ')
+        "if part[0] =~ '\v[%#<]'
+            "let expanded_part = fnameescape(expand(part))
+            "let expanded_cmdline = substitute(expanded_cmdline, part, expanded_part, '')
+        "endif
+    "endfor
+    "botright new
+    "setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
+""    call setline(1, 'You entered:    ' . a:cmdline)
+""    call setline(2, 'Expanded Form:  ' .expanded_cmdline)
+""    call setline(3,substitute(getline(2),'.','=','g'))
+    "execute '$read !'. expanded_cmdline
+    "setlocal nomodifiable
+    "1
+"endfunction
+
+"set tags=./tags
+"let g:easytags_dynamic_files = 1
 

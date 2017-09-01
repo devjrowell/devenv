@@ -88,3 +88,4 @@ source ~/.zshenv
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+stty -ixon
