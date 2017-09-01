@@ -94,3 +94,5 @@ if [ -f /Users/jrowell/.tnsrc ]; then
     source /Users/jrowell/.tnsrc 
 fi
 ###-tns-completion-end-###
+
+stty -ixon

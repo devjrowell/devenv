@@ -1,0 +1,27 @@
+
+let g:tern_show_argument_hints='on_hold'
+let g:tern_map_keys=1
+let g:tern#is_show_argument_hints_enabled=0
+let g:tern_request_timeout=10
+
+autocmd FileType javascript nnoremap gd :TernDef<cr>
+"autocmd FileType cs nnoremap <leader>fi :OmniSharpFindImplementations<cr>
+autocmd FileType javascript nnoremap <leader>tt :TernType<cr>
+"autocmd FileType cs nnoremap <leader>fs :OmniSharpFindSymbol<cr>
+autocmd FileType javascript nnoremap <leader>tr :TernRefs<cr>
+"finds members in the current buffer
+"autocmd FileType cs nnoremap <leader>fm :OmniSharpFindMembers<cr>
+" cursor can be anywhere on the line containing an issue
+"autocmd FileType cs nnoremap <leader>x  :OmniSharpFixIssue<cr>
+"autocmd FileType cs nnoremap <leader>fx :OmniSharpFixUsings<cr>
+"autocmd FileType cs nnoremap <leader>tt :OmniSharpTypeLookup<cr>
+autocmd FileType javascript nnoremap <leader>dc :TernDoc<cr>
+"navigate up by method/property/field
+"autocmd FileType cs nnoremap <C-K> :OmniSharpNavigateUp<cr>
+"navigate down by method/property/field
+"autocmd FileType cs nnoremap <C-J> :OmniSharpNavigateDown<cr>
+autocmd FileType javascript nnoremap <leader>nm :TernRename<cr>
+
+autocmd FileType javascript nnoremap <leader>cf :silent exec "!/app/node_modules/.bin/standard --fix % > /dev/null 2>&1"<cr>:redraw!<cr>
+"set autoread
+
