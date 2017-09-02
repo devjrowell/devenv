@@ -1,5 +1,6 @@
 
-alias tmux='TERM=screen-256color-bce tmux -u attach || tmux -u new'
+#alias tmux='TERM=screen-256color-bce tmux -u attach || tmux -u new'
+alias tmux='TERM=screen-256color-bce tmux'
 alias takeover='/usr/bin/tmux detach -a'
 
 [ -s "/Applications/MacVim.app/Contents/MacOS/Vim" ] && alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
