@@ -94,7 +94,7 @@ source ~/.devenv/vimrc.colors
 source ~/.devenv/vimrc.omnisharp
 source ~/.devenv/vimrc.neocomplete
 source ~/.devenv/vimrc.typescript
-source ~/.devenv/vimrc.php
+"source ~/.devenv/vimrc.php
 source ~/.devenv/vimrc.tern
 
 " auto reload vimrc
@@ -105,6 +105,7 @@ augroup END " }
 
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['standard'] " eslint,standard
+let g:syntastic_typescript_checkers = ['tslint'] " eslint,standard
 "let g:syntastic_javascript_checkers = ['jsxhint']
 "let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 "autocmd bufwritepost *.js :silent exec "!/app/node_modules/.bin/standard --fix % > /dev/null 2>&1"

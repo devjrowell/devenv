@@ -44,7 +44,7 @@ Plugin 'ternjs/tern_for_vim'
 "Plugin 'flowtype/vim-flow'
 
 " php
-"Plugin 'Shougo/vimproc'
+Plugin 'Shougo/vimproc'
 "Plugin 'Shougo/unite.vim'
 "Plugin 'm2mdas/phpcomplete-extended'
 

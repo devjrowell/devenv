@@ -4,3 +4,4 @@ let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' ch
 
 autocmd FileType typescript nnoremap gd :TsuDefinition<cr>
 autocmd FileType typescript nnoremap <leader>fu :TsuReferences<cr>
+autocmd FileType typescript nnoremap <leader>cf :silent exec "!/app/src/web/node_modules/.bin/tslint --fix % > /dev/null 2>&1"<cr>:redraw!<cr>
